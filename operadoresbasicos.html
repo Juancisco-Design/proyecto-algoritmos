@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Operadores</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <header>
+        <h1>ALGORTIMOS DE COMPRESIÓN</h1>
+        <p>Proyecto Final. &copy; Juan F. Flores. </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="queson.html">¿Qué son los Medios?</a></li>
+            <li><a href="prensa.html">A. Prensa</a></li>
+            <li><a href="cine.html">A. Cine</a></li>
+            <li><a href="radio.html">A. Radio</a></li>
+            <li><a href="television.html">A. Televisión</a></li>
+            <li><a href="redessociales.html">A. Redes Sociales</a></li>
+            <li><a href="compresiondatos.html">Compresión de Datos</a></li>
+        </ul>
+        <br>
+        <ul>
+            <li><a href="procesamientoimg.html">Procesamiento de Imágenes</a></li>
+            <li><a href="operadoresbasicos.html">Operadores Básicos</a></li>
+            <li><a href="ampliacionespacial.html">Ampliación Espacial</a></li>
+            <li><a href="operadorinverso.html">Operador Inverso</a></li>
+            <li><a href="funcionamiento.html">Funcionamiento</a></li>
+            <li><a href="caudio.html">Audio</a></li>
+            <li><a href="cvideo.html">Video</a></li>
+            <li><a href="streaming.html">Streamign</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="queson">
+            <h2>Operadores para el Procesamiento Básico de Imágenes</h2>
+            <p>Los operadores de umbral son utilizados en procesamiento de imágenes para segmentar una imagen en regiones distintas basadas en el valor de intensidad de los píxeles.
+                <br><br><img src="operadores.gif" alt="Operadores">
+                <br><br>Los operadores que abordaremos son los sigientes. La matriz original de referencia para los ejemplos es:
+                <br><br><img class="matriz" src="MOriginal.PNG" alt="Operadores">
+                <br><br><h3>1. Operador de Umbral (Threshold Operator):</h3> Un operador de umbral convierte una imagen en una imagen binaria, donde los píxeles con un valor de intensidad superior a un umbral dado se asignan a un valor máximo (generalmente 255 o blanco), y los píxeles con un valor de intensidad inferior al umbral se asignan a un valor mínimo (generalmente 0 o negro).
+                <br><br><img class="formula" src="F1.PNG" alt="Operadores">
+                <br><br><img class="matriz" src="M1.PNG" alt="Operadores">
+                <br><br><h3>2. Operador de Intervalo Umbral Binario (Binary Threshold Interval Operator):</h3> Similar al operador de umbral, pero con dos umbrales: los píxeles con intensidades dentro del intervalo entre los dos umbrales se asignan a un valor máximo, y los que están fuera del intervalo se asignan a un valor mínimo.
+                <br><br><img class="formula" src="F2.PNG" alt="Operadores">
+                <br><br><img class="matriz" src="M2.PNG" alt="Operadores">
+                <br><br><h3>3. Operador de Intervalo Umbral Binario Invertido (Inverted Binary Threshold Interval Operator):</h3> Similar al operador de intervalo umbral binario, pero con la asignación de valores invertida. Los píxeles dentro del intervalo se asignan al valor mínimo, y los píxeles fuera del intervalo se asignan al valor máximo.
+                <br><br><img class="formula" src="F3.PNG" alt="Operadores">
+                <br><br><img class="matriz" src="M3.PNG" alt="Operadores">
+                <br><br><h3>4. Operador de Umbral en Escala de Grises (Grayscale Threshold Operator):</h3> Este operador convierte una imagen en escala de grises en una imagen binaria utilizando un umbral.
+                <br><br><img class="formula" src="F4.PNG" alt="Operadores">
+                <br><br><img class="matriz" src="M4.PNG" alt="Operadores">
+                <br><br><h3>5. Operador de Umbral en Escala de Grises Invertido (Inverted Grayscale Threshold Operator):</h3> Similar al operador de umbral en escala de grises, pero con la asignación de valores invertida. Los píxeles con intensidades por encima del umbral se asignan al valor mínimo, y los píxeles por debajo del umbral se asignan al valor máximo.
+                <br><br><img class="formula" src="F5.PNG" alt="Operadores">
+                <br><br><img class="matriz" src="M5.PNG" alt="Operadores">
+                <br><br><h3>6. Reducción de Intensidad:</h3> El operador de reducción de intensidad es una técnica en procesamiento de imágenes que disminuye la cantidad de detalles o la variabilidad en la intensidad de píxeles en una imagen. Esto puede ser útil para simplificar la imagen, reducir el ruido o facilitar ciertos análisis.
+                <br><br><img class="formula" src="M6.PNG" alt="Operadores">
+                <br><br></p>
+                <iframe width="570" height="320" src="https://www.youtube.com/embed/xmyLLHJRndg" title="Umbralizacion de imagenes python y openCv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p><br><a class="fcc-btn" href="index.html"style="float:right">Regresar al inicio</a></p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Algoritmos de Compresión. Todos los derechos reservados. Juan F. Flores.</p>
+    </footer>
+</body>
+</html>
